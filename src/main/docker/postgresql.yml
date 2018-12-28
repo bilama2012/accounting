@@ -1,0 +1,11 @@
+version: '2'
+services:
+    accounting-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/accounting/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=accounting
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
